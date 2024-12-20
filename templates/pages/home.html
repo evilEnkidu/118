@@ -1,1 +1,39 @@
-<h1>Welcome to DJANGO</h1>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock title %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+<div class="home">
+    <div class="hero">
+        <div class="hero-content">
+            <h1>PRECISION DESIGNED<br>NEON SIGNS</h1>
+            
+            <div class="brand-logos">
+                <img src="/api/placeholder/50/30" alt="RAM">
+                <img src="/api/placeholder/50/30" alt="Chevrolet">
+                <img src="/api/placeholder/50/30" alt="GMC">
+                <img src="/api/placeholder/50/30" alt="Ford">
+                <img src="/api/placeholder/50/30" alt="Toyota">
+            </div>
+
+            <div class="made-in-usa">
+                DESIGNED & MANUFACTURED IN THE IMPERIAL VALLEY
+            </div>
+
+            <div class="features">
+                <div class="feature-item">Lorem ipsum dolor sit </div>
+                <div class="feature-item">Lorem ipsum dolor sit Lorem ipsum dolor sit</div>
+                <div class="feature-item">Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit</div>
+            </div>
+
+            <a href="#build" class="cta-button">GET A QUOTE</a>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

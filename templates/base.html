@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - Capstone</title>
+    <link rel="stylesheet" href="{% static 'css/main.css'%}">
+    {% block css %}{% endblock css %}
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="top-bar">
+            I.V. SIGNS
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT US</a>
+            <a href="#faq">FAQ</a>
+            <a href="#builds">FEATURED BUILDS</a>
+        </div>
+    
+        <nav>
+            <button class="menu-button">☰</button>
+            <img src="/api/placeholder/200/50" alt="Logo Image Placeholder" class="logo">
+        </nav>
+    
+        <div class="promo-bar">
+            SUMMER SALE - 10% OFF + FREE SHIPPING
+        </div>
+    </div>
+
+
+    <div class="content-wrapper">
+    {% block content %}
+
+
+    {% endblock %}
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#build">Build Your Own</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#featured">Featured Signs</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#installation">Installation Guides</a></li>
+                    <li><a href="#warranty">Warranty Info</a></li>
+                    <li><a href="#shipping">Shipping Policy</a></li>
+                    <li><a href="#returns">Returns & Exchanges</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>1-800-SIGNS</li>
+                    <li>support@signs.com</li>
+                    <li>123 Industrial Pkwy</li>
+                    <li>Detroit, MI 48201</li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p>Stay updated with our latest products and builds</p>
+                <div class="social-icons">
+                    <a href="#facebook">FB</a>
+                    <a href="#instagram">IG</a>
+                    <a href="#youtube">YT</a>
+                    <a href="#twitter">X</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Imperial Valley Signs. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
