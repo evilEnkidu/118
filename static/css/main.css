@@ -7,7 +7,15 @@
 html {
     height: 100%;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
 
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
 body {
     min-height: 100%;
     display: flex;
@@ -18,11 +26,15 @@ body {
     flex: 1 0 auto;
     width: 100%;
 }
+.head-wrapper{
+    position: relative;
+}
 .top-bar {
     background: #1a1a1a;
     color: white;
     padding: 8px 20px;
     text-align: right;
+    z-index: 1000;
 }
 .top-bar a {
     color: white;
@@ -118,6 +130,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .head-wrapper{
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
     .hero h1 {
         font-size: 36px;
     }

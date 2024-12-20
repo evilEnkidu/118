@@ -6,29 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %} - Capstone</title>
     <link rel="stylesheet" href="{% static 'css/main.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     {% block css %}{% endblock css %}
 </head>
 <body>
 
+<div class="head-wrapper">
     <div class="navbar">
-        <div class="top-bar">
-            I.V. SIGNS
-            <a href="#about">ABOUT</a>
-            <a href="#contact">CONTACT US</a>
-            <a href="#faq">FAQ</a>
-            <a href="#builds">FEATURED BUILDS</a>
-        </div>
-    
-        <nav>
-            <button class="menu-button">☰</button>
-            <img src="/api/placeholder/200/50" alt="Logo Image Placeholder" class="logo">
-        </nav>
-    
-        <div class="promo-bar">
-            SUMMER SALE - 10% OFF + FREE SHIPPING
-        </div>
+            <div class="top-bar">
+                I.V. SIGNS
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
+                <a href="#builds">GALLERY</a>
+            </div>
+        
+            <nav>
+                <button class="menu-button">☰</button>
+                <img src="/api/placeholder/200/50" alt="Logo Image Placeholder" class="logo">
+            </nav>
+        
+            <div class="promo-bar">
+                SUMMER SALE - 10% OFF + FREE SHIPPING
+            </div>
     </div>
-
+</div>
 
     <div class="content-wrapper">
     {% block content %}
